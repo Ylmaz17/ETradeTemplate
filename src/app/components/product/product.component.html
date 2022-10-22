@@ -1,8 +1,32 @@
-<table class="table">
-    <tr  *ngFor="let product of products">
-        <td>{{product.productId}}</td>
-        <td>{{product.productName}}</td>
-        <td>{{product.categoryId}}</td>
-        <td>{{product.unitPrice}}</td>
+
+<table *ngIf =" dataLoaded == true" class="text-center" class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Kategori</th>
+      <th>Fiyat</th>
+      <th>Marka</th>
+      <th>Stok</th>
     </tr>
+  </thead>
+  <tr *ngFor="let product of products">
+    <td>{{ product.productId }}</td>
+    <td>{{ product.productName }}</td>
+    <td>{{ product.categoryId }}</td>
+    <td>{{ product.unitPrice }}</td>
+    <td>{{ product.brand }}</td>
+    <td>{{ product.stock }}</td>
+  </tr>
 </table>
+<div *ngIf =" dataLoaded == false" class="text-center">
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
