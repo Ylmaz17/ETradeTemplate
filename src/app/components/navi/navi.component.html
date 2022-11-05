@@ -38,20 +38,18 @@
           type="search"
           placeholder="Ne aramıştınız..."
           aria-label="Search"
-        /><button class="btn btn-outline-success" type="submit">Arayın</button>
+        /><button  class="btn btn-outline-success" type="submit">Arayın</button>
         <div class="col-6 d-flex justify-content-end align-items-center">
-         
           <div class="btn-group" role="group" aria-label="Basic example">
             <button
+              routerLink="login"
               type="button"
               class="btn btn-outline-success"
               data-bs-toggle="modal"
               data-bs-target="#signinModal"
             >
-              Giriş Yap</button
-            ><a class="btn btn-outline-success" href="./userRegister.html"
-              >Kayıt Ol</a
-            >
+              Giriş Yap</button 
+            ><a routerLink="register" class="btn btn-outline-success">Kayıt Ol</a>
           </div>
         </div>
       </form>
