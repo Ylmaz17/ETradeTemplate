@@ -17,8 +17,8 @@ import { CartSummaryComponent } from './components/cart-summary/cart-summary.com
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './interceptors/add.interceptor';
-import { HomepageComponent } from './components/homepage/homepage.component';
 import { UserregisterComponent } from './components/userregister/userregister.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { UserregisterComponent } from './components/userregister/userregister.co
     CartSummaryComponent,
     ProductAddComponent,
     LoginComponent,
-    HomepageComponent,
     UserregisterComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +41,7 @@ import { UserregisterComponent } from './components/userregister/userregister.co
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    NgModule,
 
     ToastrModule.forRoot({
       positionClass: "toast-bottom-right"

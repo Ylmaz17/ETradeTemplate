@@ -1,6 +1,6 @@
 <div class="mb-3">
   <label for="filterText" class="form-label">Ürün Arayın</label>
-  <input id="filterText" type="text" [(ngModel)]="filterText" class="form-control"  placeholder="Ne aramıştınız...">
+  <!-- <input id="filterText" type="text" [(ngModel)]="filterText" class="form-control"  placeholder="Ne aramıştınız..."> -->
 </div>
 <div *ngIf="filterText" class="alert alert-success">
   {{filterText}}
@@ -25,7 +25,7 @@
       <td>{{ product.productName }}</td>
       <td>{{ product.categoryId }}</td>
       <td>{{ product.unitPrice }}</td>
-      <td>{{ product.unitPrice |vatAdded:18 |currency}}</td>
+      <!-- <td>{{ product.unitPrice |vatAdded:18 |currency}}</td> -->
       <td>{{ product.brand }}</td>
       <td>{{ product.stock }}</td>
       <td><button (click)="addToCart(product)" type="button" class="btn btn-success">Sepete Ekle</button></td>

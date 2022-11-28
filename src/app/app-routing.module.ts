@@ -8,8 +8,8 @@ import { UserregisterComponent } from './components/userregister/userregister.co
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
-  //{path:"",pathMatch:"full",component:ProductComponent},
-  {path:"",pathMatch:"full",component:HomepageComponent},
+  {path:"",pathMatch:"full",component:ProductComponent},
+  //{path:"",pathMatch:"full",component:HomepageComponent},
   {path:"products",component:ProductComponent},
   {path:"products/category/:categoryId",component:ProductComponent},
   {path:"products/add",component:ProductAddComponent, canActivate:[LoginGuard]},
